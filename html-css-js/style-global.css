@@ -6,7 +6,42 @@
 
 body{
     display: flex;
+    align-content: center;
     width: 100vw;
     height: 100vh;
     background-image: url(img/background.png);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 100px;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+
+h1{
+    width: 936px;
+    height: 72px;
+    margin-top: 70px;
+    font-size: 62px;
+    line-height: 62px;
+}
+
+button{
+    background-color: transparent;
+    border: transparent;
+    padding: 15px;
+    font-family: 'Press Start 2P', cursive; 
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover{
+    border: rgb(99, 25, 117) solid 2px;
+    border-radius: 5px;
+    box-shadow: black 3px 3px 3px;
 }

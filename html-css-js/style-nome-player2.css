@@ -1,0 +1,43 @@
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    gap: 80px;
+}
+
+.subtitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+.nomeJogador2{
+    position: absolute;
+    bottom: 140px;
+    left: 150px;
+}
+
+input{
+    background-color: transparent;
+    border-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 450px;
+    height: 30px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;   
+}
+
+button{
+    position: absolute;
+    right: 70px;
+    bottom: 40px;
+}
