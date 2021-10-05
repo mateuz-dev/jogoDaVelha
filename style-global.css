@@ -33,16 +33,15 @@ h1{
     line-height: 62px;
 }
 
-button{
+.button{
     background-color: transparent;
     border: transparent;
-    padding: 15px;
     font-family: 'Press Start 2P', cursive; 
     color: white;
-    transition: 0.3s;
+    transition: 0.15s;
 }
 
-button:hover{
+.button:hover{
     border: rgb(99, 25, 117) solid 2px;
     border-radius: 5px;
     box-shadow: black 3px 3px 3px;

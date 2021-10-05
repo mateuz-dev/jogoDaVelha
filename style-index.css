@@ -27,16 +27,15 @@ h2{
     border-left: none;
     border-right: none;
     width: 450px;
-    height: 30px;
+    height: 80px;
     color: white;
-    font-family: 'Press Start 2P', cursive;   
+    font-family: 'Press Start 2P', cursive;  
+    outline: none;
+    font-size: 30px; 
 }
 
-/*--------------------------------------------------------*/
-
-.textNome input{
-    outline: none;
-    font-size: 48px;
+.textNome label{
+    font-size: 30px;
 }
 
 /*--------------------------------------------------------*/
@@ -45,14 +44,11 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: start;
-}
-
-.escolha{
-    display: flex;
-    flex-direction: column;
+    gap: 100px;
     align-self: flex-start;
     margin-top: 70px;
 }
+
 
 .inputEscolha{
     display: flex;
@@ -81,7 +77,10 @@ form{
 
 /*--------------------------------------------------------*/
 
-button{
-    align-self: flex-end;
-    margin-right: 90px;
+.button{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
 }
