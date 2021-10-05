@@ -13,6 +13,8 @@ h2{
     line-height: 30px;
 }
 
+/*--------------------------------------------------------*/
+
 .textNome{
     align-self: flex-start;
     margin-top: 110px;
@@ -30,9 +32,19 @@ h2{
     font-family: 'Press Start 2P', cursive;   
 }
 
+/*--------------------------------------------------------*/
+
+.textNome input{
+    outline: none;
+    font-size: 48px;
+}
+
+/*--------------------------------------------------------*/
+
 form{
     display: flex;
-    width: 85vw;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .escolha{
@@ -51,7 +63,14 @@ form{
 }
 
 .inputEscolha label{
-    font-size: 40px;
+    font-size: 98px;
+}
+
+.inputEscolha input{
+    height: 32px;
+    width: 32px;
+    background: none;
+    border: none;
 }
 
 .x, .o{
@@ -59,6 +78,8 @@ form{
     align-items: center;
     gap: 15px;
 }
+
+/*--------------------------------------------------------*/
 
 button{
     align-self: flex-end;
