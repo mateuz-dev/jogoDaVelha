@@ -27,7 +27,7 @@ h2{
     border-left: none;
     border-right: none;
     width: 450px;
-    height: 80px;
+    height: 60px;
     color: white;
     font-family: 'Press Start 2P', cursive;  
     outline: none;
@@ -44,11 +44,15 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    width: 95%;
     gap: 100px;
     align-self: flex-start;
     margin-top: 70px;
 }
 
+.escolha{
+    height: 100px;
+}
 
 .inputEscolha{
     display: flex;
@@ -80,7 +84,6 @@ form{
 .button{
     width: 150px;
     height: 50px;
-    position: absolute;
-    bottom: 50px;
-    right: 100px;
+    align-self: flex-end;
+    margin-bottom: 30px;
 }

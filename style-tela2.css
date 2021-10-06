@@ -11,9 +11,10 @@
     flex-direction: column;
     position: absolute;
     top: 470px;
-    gap: 10px;
+    gap: 20px;
 }
 
-button{
+.button{
     font-size: 30px;
+    padding: 10px;
 }

@@ -15,5 +15,10 @@
 
 .botoes{
     display: flex;
-    gap: 100px;
+    gap: 80px;
+}
+
+.button{
+    width: 110px;
+    height: 40px;
 }
