@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/*---------------------------------*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100vw;
+    padding: 30px;
+}
+#buttonMenu{
+    background: none;
+    border: none;
+    margin-left: 25px;
+}
+#buttonMenu:hover{
+    cursor: pointer;
+}
+
+/*---------------------------------*/
+
+.placar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    color: white;
+}
+
+.placarPlayer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placarNome{font-size: 36px;}
+
+.placarPontuacao{
+    font-size: 72px;
+    margin-right: 55px;
+    margin-left: 55px;
+}
+
+#x{font-size: 48px;}
+
+/*---------------------------------*/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.game div{
+    margin: 15px;
+}
+.game button{
+    width: 175px;
+    height: 175px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(45, 31, 65, 0.700);
+    transition: 1s;
+}
+.game button:hover{
+    border: 2px solid white;
+    background-color: rgb(45, 31, 65);
+}
+
+/*---------------------------------*/
