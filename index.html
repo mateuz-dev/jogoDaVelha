@@ -1,65 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style-global.css">
-    <link rel="stylesheet" href="style-index.css">
-    <title>Jogo da Velha</title>
-</head>
-
-
-
-<body>
-
-    <main>
-
-        <div class="titulo">
-            <h2>BEM VINDO!</h2>
-            <h1>JOGO DA VELHA</h1>
-        </div>
-
-
-
-        <form>
-
-            <div class="textNome">
-                <label for="nomePlayer1">Insira seu nome: </label>
-                <input id="nomePlayer1" name="nomePlayer1" type="text">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style-global.css" />
+        <link rel="stylesheet" href="style-index.css" />
+        <title>Jogo da Velha</title>
+    </head>
+    <body>
+        <main>
+            <div class="titulo">
+                <h2>BEM VINDO!</h2>
+                <h1>JOGO DA VELHA</h1>
             </div>
-
-            <div class="escolha">
-                <label for="escolha" id="txtEscolha">Escolha como você quer jogar: </label>
-
-                <div class="inputEscolha">
-                    <div class="x">
-                        <input id="escolhaX" name="escolha" type="radio" value="x">
-                        <label for="escolhaX">X</label>
-                    </div>
-
-                    <div class="o">
-                        <input id="escolhaO" name="escolha" type="radio" value="o">
-                        <label for="escolhaO">O</label>
-                    </div>
-                </div>
-
+            <h3>MODOS DE JOGO:</h3>
+            <div class="botoes">
+                <input
+                    class="button"
+                    type="button"
+                    onclick="javascript:window.location.href='./game-vs-player2.html'"
+                    value="DOIS JOGADORES"
+                />
+                <input class="button" type="button" value="CONTRA O COMPUTADOR" />
             </div>
-            <input type="button" class="button" value="Continue" onclick="javascript:window.location.href='./modo-de-jogo.html'">
-
-        </form>
-
-
-
-        
-
-    </main>
-
-</body>
-
+            <div class="dificuldade">
+                <input type="button" value="FÁCIL" class="button" />
+                <input type="button" value="MÉDIO" class="button" />
+                <input type="button" value="DIFÍCIL" class="button" />
+            </div>
+        </main>
+    </body>
 </html>

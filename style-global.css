@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     align-content: center;
     width: auto;
@@ -15,7 +15,7 @@ body{
     background-repeat: no-repeat;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -25,24 +25,22 @@ main{
     color: white;
 }
 
-h1{
-    width: 936px;
-    height: 72px;
-    margin-top: 70px;
+h1 {
+    /* margin-top: 70px; */
     font-size: 62px;
     line-height: 62px;
 }
 
-.button{
+.button {
     background-color: transparent;
     border: transparent;
-    font-family: 'Press Start 2P', cursive; 
+    font-family: 'Press Start 2P', cursive;
     color: white;
     transition: 0.15s;
     text-align: center;
 }
 
-.button:hover{
+.button:hover {
     border: rgb(99, 25, 117) solid 2px;
     border-radius: 5px;
     box-shadow: black 3px 3px 3px;
