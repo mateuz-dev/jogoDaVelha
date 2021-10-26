@@ -27,28 +27,25 @@ var playerTurn = player1;
 
 const playerTurnText = document.querySelector('#playerTurn');
 
-function validarBotao(buttonClicked) {
-    if (buttonClicked.textContent != '') {
-        return false;
-    } else {
-        return true;
-    }
-}
+// function validarBotao(buttonClicked) {
+//     if (buttonClicked.textContent != '') {
+//         return false;
+//     } else {
+//         return true;
+//     }
+// }
 
 function play(buttonClicked) {
-    if (validarBotao()) {
-        if (playerTurn == player1) {
-            document.getElementById(buttonClicked).innerHTML = 'X';
-            playerTurnText.innerHTML = 'PLAYER 2';
-            playerTurn = player2;
-            winner();
-        } else if (playerTurn == player2) {
-            document.getElementById(buttonClicked).innerHTML = 'O';
-            playerTurnText.innerHTML = 'PLAYER 1';
-            playerTurn = player1;
-            winner();
-        }
-    } else {
+    if (playerTurn == player1) {
+        document.getElementById(buttonClicked).innerHTML = 'X';
+        playerTurnText.innerHTML = 'PLAYER 2';
+        playerTurn = player2;
+        winner();
+    } else if (playerTurn == player2) {
+        document.getElementById(buttonClicked).innerHTML = 'O';
+        playerTurnText.innerHTML = 'PLAYER 1';
+        playerTurn = player1;
+        winner();
     }
 }
 
