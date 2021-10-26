@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------------------------------*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+
+    background-image: url(img/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*----------------------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+/*  H E A D E R  */
+
+header {
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 20px;
+    flex-grow: 0;
+}
+
+#iconMenu {
+    width: 35px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*----------------------------------*/
+
+/*  M A I N  */
+
+#scoreboard {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+#scoreboard em {
+    font-size: 30px;
+    margin: 20px;
+}
+
+#turn {
+    margin-top: 20px;
+    color: #9f3cca;
+}
+
+.game div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    max-height: 125px;
+}
+.game button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 125px;
+    height: 125px;
+    border: none;
+    border-radius: 15px;
+    margin: 7px;
+
+    background-color: #1d072698;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 75px;
+    color: white;
+
+    transition: 1s;
+}
+.game button:hover {
+    cursor: pointer;
+    background-color: #1d0726;
+}
+
+/*----------------------------------*/
+
+/*  M O D A L   M E N U  */
+
+#modalMenu {
+    position: absolute;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px white solid;
+    border-radius: 15px;
+
+    padding: 20px;
+
+    background-color: #1d0726e8;
+
+    transition: 0.5s;
+}
+#modalMenu img {
+    width: 30px;
+    cursor: pointer;
+}
+#modalMenuTop {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    width: 100%;
+    padding-right: 40px;
+}
+
+#modalMenuOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#textResult {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    margin: 10px;
+    border: 1px white solid;
+    border-radius: 15px;
+
+    background-color: #3a0d40;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: white;
+}
+button:hover {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+/*  F O O T E R  */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+footer a:hover {
+    color: #9f3cca;
+    border-bottom: 1px #9f3cca solid;
+}
