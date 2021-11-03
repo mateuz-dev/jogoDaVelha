@@ -13,6 +13,7 @@ body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    user-select: none;
 }
 
 main {
