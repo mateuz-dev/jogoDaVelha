@@ -58,6 +58,7 @@ header {
 
 #scoreboard {
     display: flex;
+    flex-direction: row;
     align-items: center;
     font-size: 15px;
 }
@@ -184,4 +185,64 @@ footer a {
 footer a:hover {
     color: #9f3cca;
     border-bottom: 1px #9f3cca solid;
+}
+
+@media (max-width: 640px) {
+    body{
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+    header{
+        display: none;
+    }
+    main{
+        max-height: 100vh;
+        max-width: 100vw;
+    }
+    #scoreboard {
+        flex-direction: column;
+        font-size: 15px;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    #scoreboard em {
+        font-size: 18px;
+        margin: 10px;
+    }
+    #turn {
+        margin-top: 25px;
+        color: #9f3cca;
+    }
+    .game{
+        width: 80%;
+    }
+    .game div {
+        margin: 10px;
+        max-height: 80px;
+    }
+    .game button {
+        width: 80px;
+        height: 80px;
+        font-size: 45px;
+    }
+    footer {
+        display: none;
+    }
+    #modalMenu {    
+        padding: 0px;
+    }
+    #modalMenuTop {
+        width: 100%;
+        padding-right: 20px;
+    }
+    
+    #textResult {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    button {
+        font-size: 15px;
+    }
 }

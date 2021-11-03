@@ -21,9 +21,27 @@ function closeMenu() {
 const player1 = 'X';
 const player2 = 'O';
 
-const gameOver = false;
-
 var playerTurn = player1;
+
+var player1Score = 0;
+var player2Score = 0;
+
+const player1ScoreText = document.getElementById('player1ScoreText');
+const player2ScoreText = document.getElementById('player2ScoreText');
+
+const textResult = document.getElementById('textResult');
+
+const button1 = document.getElementById('button1');
+const button2 = document.getElementById('button2');
+const button3 = document.getElementById('button3');
+const button4 = document.getElementById('button4');
+const button5 = document.getElementById('button5');
+const button6 = document.getElementById('button6');
+const button7 = document.getElementById('button7');
+const button8 = document.getElementById('button8');
+const button9 = document.getElementById('button9');
+
+const gameOver = false;
 
 const playerTurnText = document.querySelector('#playerTurn');
 
@@ -49,16 +67,6 @@ function play(buttonClicked) {
     }
 }
 
-const button1 = document.getElementById('button1');
-const button2 = document.getElementById('button2');
-const button3 = document.getElementById('button3');
-const button4 = document.getElementById('button4');
-const button5 = document.getElementById('button5');
-const button6 = document.getElementById('button6');
-const button7 = document.getElementById('button7');
-const button8 = document.getElementById('button8');
-const button9 = document.getElementById('button9');
-
 function cleanBoard() {
     var i = 0;
     while (i <= 9) {
@@ -66,14 +74,6 @@ function cleanBoard() {
         i++;
     }
 }
-
-var player1Score = 0;
-var player2Score = 0;
-
-const player1ScoreText = document.getElementById('player1ScoreText');
-const player2ScoreText = document.getElementById('player2ScoreText');
-
-const textResult = document.getElementById('textResult');
 
 function winner() {
     if (

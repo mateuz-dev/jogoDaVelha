@@ -21,11 +21,18 @@ function closeMenu() {
 const player1 = 'X';
 const bot = 'O';
 
-const gameOver = false;
-
 var playerTurn = player1;
-
 const playerTurnText = document.querySelector('#playerTurn');
+
+var player1Score = 0;
+var botScore = 0;
+
+const player1ScoreText = document.getElementById('player1ScoreText');
+const botScoreText = document.getElementById('botScoreText');
+
+const textResult = document.getElementById('textResult');
+
+const gameOver = false;
 
 function play(buttonClicked) {
     if (playerTurn == player1) {
@@ -71,14 +78,6 @@ function cleanBoard() {
         i++;
     }
 }
-
-var player1Score = 0;
-var botScore = 0;
-
-const player1ScoreText = document.getElementById('player1ScoreText');
-const botScoreText = document.getElementById('botScoreText');
-
-const textResult = document.getElementById('textResult');
 
 function winner() {
     if (
