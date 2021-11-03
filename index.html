@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="style-global.css" />
-        <link rel="stylesheet" href="style-index.css" />
-        <title>Jogo da Velha</title>
-    </head>
-    <body>
-        <main>
-            <div class="titulo">
-                <h2>BEM VINDO!</h2>
-                <h1>JOGO DA VELHA</h1>
-            </div>
-            <h3>MODOS DE JOGO:</h3>
-            <div class="botoes">
-                <input
-                    class="button"
-                    type="button"
-                    onclick="javascript:window.location.href='./game-vs-player2.html'"
-                    value="DOIS JOGADORES"
-                />
-                <input class="button" type="button" value="CONTRA O COMPUTADOR" />
-            </div>
-            <div class="dificuldade">
-                <input type="button" value="FÁCIL" class="button" />
-                <input type="button" value="MÉDIO" class="button" />
-                <input type="button" value="DIFÍCIL" class="button" />
-            </div>
-        </main>
-    </body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style-global.css" />
+    <link rel="stylesheet" href="style-index.css" />
+    <script src="script.js"></script>
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <main>
+        <div class="titulo">
+            <h2>BEM VINDO!</h2>
+            <h1>JOGO DA VELHA</h1>
+        </div>
+        <h3>MODOS DE JOGO:</h3>
+        <div class="botoes">
+            <input class="button" type="button" onclick="javascript:window.location.href='./game-vs-player2.html'"
+                value="DOIS JOGADORES" />
+            <input class="button" id="vsComputador" type="button" value="CONTRA O COMPUTADOR" />
+        </div>
+        <div class="dificuldade" id="dificuldade">
+            <input type="button" value="FÁCIL" class="button" />
+            <input type="button" value="MÉDIO" class="button" />
+            <input type="button" value="DIFÍCIL" class="button" />
+        </div>
+    </main>
+</body>
+
 </html>

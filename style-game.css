@@ -192,9 +192,6 @@ footer a:hover {
         max-width: 100vw;
         max-height: 100vh;
     }
-    header{
-        display: none;
-    }
     main{
         max-height: 100vh;
         max-width: 100vw;
@@ -226,7 +223,12 @@ footer a:hover {
         font-size: 45px;
     }
     footer {
-        display: none;
+        text-align: center;
+        display: flex;
+    }
+    footer p{
+        font-size: 13px;
+        padding: 15px;
     }
     #modalMenu {    
         padding: 0px;

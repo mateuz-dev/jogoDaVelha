@@ -26,11 +26,11 @@ h3 {
 }
 
 .dificuldade {
+    display: none;
     margin-top: 3%;
 }
 
 .dificuldade input {
-    display: none;
     padding: 10px;
     font-size: 20px;
 }
