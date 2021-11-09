@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JOGO DA VELHA | P1 VS COM</title>
+    <link rel="stylesheet" href="style-global.css" />
+    <link rel="stylesheet" href="style-game.css" />
+    <link rel="shortcut icon" href="img/iconLogo.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+    <script src="game-bot-medium.js" defer></script>
+</head>
+
+
+
+<body>
+    <header>
+        <img src="img/iconeMenu.png" id="iconMenu" onclick="openMenu()" />
+    </header>
+
+    <main>
+        <p id="scoreboard">
+            Player 1 (X) <em id="player1ScoreText">0</em>x<em id="botScoreText">0</em> (O) Computador
+        </p>
+
+        <p id="turn">Vez do <em id="playerTurn">PLAYER 1</em></p>
+
+        <div class="game">
+            <div id="gameTop">
+                <button id="button1" class="buttons" onclick="play(this.id)"></button>
+                <button id="button2" class="buttons" onclick="play(this.id)"></button>
+                <button id="button3" class="buttons" onclick="play(this.id)"></button>
+            </div>
+            <div id="gameCenter">
+                <button id="button4" class="buttons" onclick="play(this.id)"></button>
+                <button id="button5" class="buttons" onclick="play(this.id)"></button>
+                <button id="button6" class="buttons" onclick="play(this.id)"></button>
+            </div>
+            <div id="gameBottom">
+                <button id="button7" class="buttons" onclick="play(this.id)"></button>
+                <button id="button8" class="buttons" onclick="play(this.id)"></button>
+                <button id="button9" class="buttons" onclick="play(this.id)"></button>
+            </div>
+        </div>
+
+        <div id="modalMenu" hidden>
+            <div id="modalMenuTop">
+                <img src="img/iconClose.png" alt="close menu" id="iconCloseMenu" onclick="closeMenu()" />
+            </div>
+
+            <p id="textResult"></p>
+
+            <div id="modalMenuOptions">
+                <a href="index.html"><button>VOLTAR AO MENU</button></a>
+                <a href="player-vs-com-hard.html"><button>ZERAR PLACAR</button></a>
+                <button onclick="closeMenu()">JOGAR NOVAMENTE</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Developed By <a href="https://github.com/luuh-oliveira" target="blank">@luuh-oliveira</a> and
+            <a href="https://github.com/mateuz-dev" target="blank">@mateuz-dev</a>
+        </p>
+    </footer>
+</body>
+
+</html>

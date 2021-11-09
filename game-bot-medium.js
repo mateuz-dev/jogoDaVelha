@@ -8,6 +8,7 @@ const modalMenu = document.getElementById('modalMenu');
 
 function openMenu() {
     modalMenu.style.display = 'flex';
+    textResult.innerHTML = '';
 }
 
 function closeMenu() {
@@ -21,8 +22,74 @@ function closeMenu() {
 const player1 = 'X';
 const bot = 'O';
 
+const gameOver = false;
+
 var playerTurn = player1;
+
 const playerTurnText = document.querySelector('#playerTurn');
+
+function play(buttonClicked) {
+    if (document.getElementById(buttonClicked).textContent == '') {
+        if (playerTurn == player1) {
+            document.getElementById(buttonClicked).innerHTML = 'X';
+            winner();
+            playerTurnText.innerHTML = 'COMPUTADOR';
+            playerTurn = bot;
+            setTimeout(botPlay, 500);
+        }
+    }
+}
+
+const horizontal1 = [button1, button2, button3];
+const horizontal2 = [button4, button5, button6];
+const horizontal = [button7, button8, button9];
+const vertical1 = [button1, button4, button7];
+const vertical2 = [button2, button5, button8];
+const vertical3 = [button3, button6, button9];
+const diagonal1 = [button1, button5, button9];
+const diagonal2 = [button3, button5, button7];
+
+function botPlay() {
+    var arrayPosition = 0;
+    var i = 0;
+    var numX = 0;
+
+    while (i <= 2) {
+        var arrayPositionText = vertical2[arrayPosition].textContent;
+        if (arrayPositionText == 'X') {
+            numX++;
+        }
+        arrayPosition++;
+        i++;
+    }
+
+    if (numX == 2) {
+        var i = 0;
+        while (i <= 2) {
+            if (vertical2[i].textContent == '') {
+                vertical2[i].innerHTML = 'O';
+            } else {
+                i++;
+            }
+        }
+    } else {
+        botRandomPlay();
+    }
+}
+
+function botRandomPlay() {
+    const buttons = [button1, button2, button3, button4, button5, button6, button7, button8, button9];
+    var buttonSelected = Math.floor(Math.random() * buttons.length);
+
+    if (buttons[buttonSelected].textContent == '') {
+        buttons[buttonSelected].innerHTML = 'O';
+        winner();
+        playerTurn = player1;
+        playerTurnText.innerHTML = 'PLAYER 1';
+    } else {
+        botPlay();
+    }
+}
 
 var player1Score = 0;
 var botScore = 0;
@@ -31,53 +98,6 @@ const player1ScoreText = document.getElementById('player1ScoreText');
 const botScoreText = document.getElementById('botScoreText');
 
 const textResult = document.getElementById('textResult');
-
-const gameOver = false;
-
-function play(buttonClicked) {
-    if (playerTurn == player1) {
-        document.getElementById(buttonClicked).innerHTML = 'X';
-        playerTurnText.innerHTML = 'COMPUTADOR';
-        playerTurn = bot;
-        winner();
-        botPlay();
-    }
-}
-
-function botPlay() {
-    const button1 = document.getElementById('button1');
-    const button2 = document.getElementById('button2');
-    const button3 = document.getElementById('button3');
-    const button4 = document.getElementById('button4');
-    const button5 = document.getElementById('button5');
-    const button6 = document.getElementById('button6');
-    const button7 = document.getElementById('button7');
-    const button8 = document.getElementById('button8');
-    const button9 = document.getElementById('button9');
-
-    const buttons = [button1, button2, button3, button4, button5, button6, button7, button8, button9];
-    var buttonSelected = Math.floor(Math.random() * buttons.length);
-
-    console.log(buttons[buttonSelected]);
-
-    while (buttons[buttonSelected].textContent != '') {
-        var buttonSelected = Math.floor(Math.random() * buttons.length);
-        console.log(buttons[buttonSelected]);
-    }
-
-    buttons[buttonSelected].innerHTML = 'O';
-
-    winner();
-    playerTurn = player1;
-}
-
-function cleanBoard() {
-    var i = 0;
-    while (i <= 9) {
-        document.getElementsByClassName('buttons')[i].innerHTML = '';
-        i++;
-    }
-}
 
 function winner() {
     if (
@@ -130,5 +150,13 @@ function winner() {
         playerTurn = player1;
         playerTurnText.innerHTML = 'PLAYER 1';
         cleanBoard();
+    }
+}
+
+function cleanBoard() {
+    var i = 0;
+    while (i <= 9) {
+        document.getElementsByClassName('buttons')[i].innerHTML = '';
+        i++;
     }
 }
